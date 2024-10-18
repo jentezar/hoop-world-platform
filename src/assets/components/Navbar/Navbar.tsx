@@ -1,3 +1,4 @@
+// Updated Navbar.tsx
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import './Navbar.scss';
@@ -5,12 +6,12 @@ import './Navbar.scss';
 const Navbar: React.FC = () => {
   return (
     <nav className="navbar">
-      <ul>
-        <li>
-          <NavLink to="/">
-            <span className="basketball-icon"></span>Home
-          </NavLink>
-        </li>
+      <div className="navbar-left">
+        <NavLink to="/" className="hoopwrld-link">
+          <span className="basketball-icon"></span>HoopWrld
+        </NavLink>
+      </div>
+      <ul className="navbar-center">
         <li>
           <NavLink to="/community">
             <span className="basketball-icon"></span>Community
@@ -32,6 +33,11 @@ const Navbar: React.FC = () => {
           </NavLink>
         </li>
       </ul>
+      <div className="navbar-right">
+        <NavLink to="/login" className="login-link">
+          <span className="basketball-icon"></span>Log In
+        </NavLink>
+      </div>
     </nav>
   );
 };

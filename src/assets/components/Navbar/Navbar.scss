@@ -1,42 +1,65 @@
+// Updated Navbar.scss
 .navbar {
-    position: sticky; /* or fixed */
+    position: sticky;
     top: 0;
-    z-index: 1000; /* Make sure it's above other elements */
+    z-index: 1000;
     width: 100%;
     background-color: #000000;
     padding: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-  }
-  
-  
-  
-  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-left {
+    flex: 1;
+}
+
+.navbar-center {
     justify-content: center;
     display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
-  }
-  
-  li {
+    flex: 10;
+}
+
+.navbar-right {
+    text-align: right;
+}
+
+ul {
+    justify-content: center;
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
     margin: 0 1.5rem;
-  }
-  
-  a {
+}
+
+a {
     color: #ffffff;
     text-decoration: none;
     font-size: 1.5rem;
     display: flex;
     align-items: center;
     transition: color 0.3s ease, transform 0.3s ease;
-  
+
     &:hover {
       color: #ffd700;
       transform: scale(1.05);
     }
-  }
-  
-  .basketball-icon {
+}
+
+.hoopwrld-link, .login-link {
+    font-size: 1.8rem;
+}
+
+.basketball-icon {
     display: inline-block;
     width: 20px;
     height: 20px;
@@ -50,23 +73,22 @@
 
 @keyframes dribble {
     0% {
-      transform: translateY(0); /* Start at resting position */
+      transform: translateY(0);
     }
     30% {
-      transform: translateY(-12px); /* Ball goes up */
+      transform: translateY(-12px);
     }
     50% {
-      transform: translateY(0); /* Ball comes back down */
+      transform: translateY(0);
     }
     70% {
-      transform: translateY(-6px); /* Ball bounces back up, but less high */
+      transform: translateY(-6px);
     }
     100% {
-      transform: translateY(0); /* End at resting position */
+      transform: translateY(0);
     }
-  }
-  
-  /* Trigger the dribbling animation on hover */
+}
+
 .navbar a:hover .basketball-icon {
-    animation: dribble .805s ease-in-out infinite; /* Animation duration and loop */
-  }
+    animation: dribble .805s ease-in-out infinite;
+}
