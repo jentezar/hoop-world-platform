@@ -1,11 +1,19 @@
-
-  .cards-page {
+.cards-page {
     color: #ffffff;
     text-align: center;
   }
   
   .page-heading {
     font-size: 2.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 2rem; /* Add spacing below the heading */
   }
+  
+  .cards-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem; /* Add spacing between the cards */
+  }
+  
+  /* Remove .card-item, as the card styles are handled in Card.scss */
   

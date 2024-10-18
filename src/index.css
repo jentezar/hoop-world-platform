@@ -39,7 +39,7 @@ body {
   background-image: url('/images/kobe.jpeg'); /* Background Image */
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-attachment: fixed; /* Keeps background fixed when scrolling */
 }
 
@@ -61,15 +61,14 @@ h1, .featured-heading {
 
 /* Page Container */
 .page-container {
-  padding: 2rem;
-  padding-top: 4rem;
-  margin-top: 0;
-  min-height: 100vh;
+  min-height: 100vh; /* This ensures that the container covers the viewport */
+  width: 100vw; /* Ensure it takes the full width of the viewport */
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background color */
   display: flex;
   flex-direction: column;
+  align-items: center; /* Center the content horizontally */
   justify-content: flex-start;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent background */
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background to overlay on the image */
 }
 
 

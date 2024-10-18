@@ -1,28 +1,37 @@
 import React from 'react';
-import Card from '../../components/Card/Card';
+import { useNavigate } from 'react-router-dom';
+import './MerchPage.scss';
 
 const MerchPage: React.FC = () => {
+  const navigate = useNavigate();
+
   const merchItems = [
-    {
-      imgSrc: '/images/hoopworld-tee.jpeg',
-      title: 'HoopWorld Tee',
-      description: 'Comfortable and stylish t-shirt for fans.',
-    },
-    {
-      imgSrc: '/images/hoopworld-cap.jpeg',
-      title: 'HoopWorld Cap',
-      description: 'Keep the sun out with our branded cap.',
-    },
-    // Add more merch items
+    { title: 'Defense Pack', imgSrc: '/images/defensePack.jpeg' },
+    { title: 'Dribbling Pack', imgSrc: '/images/dribblingPack.jpeg' },
+    { title: 'Shooting Pack', imgSrc: '/images/shootingPack.jpeg' },
+    { title: 'Passing Pack', imgSrc: '/images/passingPack.jpeg'},
+    { title: 'Defense Pack', imgSrc: '/images/defensePack.jpeg' },
+    { title: 'Dribbling Pack', imgSrc: '/images/dribblingPack.jpeg' },
+    { title: 'Shooting Pack', imgSrc: '/images/shootingPack.jpeg' },
+    { title: 'Passing Pack', imgSrc: '/images/passingPack.jpeg'}
+    // Add more merch items with appropriate image paths
   ];
+
+  const handleAddToCart = () => {
+    navigate('/cart');
+  };
 
   return (
     <div className="page-container">
       <div className="merch-page">
-        <h2 className="featured-heading">Merchandise</h2>
+        <h2 className="page-heading">Merchandise</h2>
         <div className="merch-items">
           {merchItems.map((item, index) => (
-            <Card key={index} {...item} />
+            <div className="merch-item" key={index}>
+              <img src={item.imgSrc} alt={item.title} className="item-image" />
+              <h3>{item.title}</h3>
+              <button onClick={handleAddToCart}>Add to Cart</button>
+            </div>
           ))}
         </div>
       </div>

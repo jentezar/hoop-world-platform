@@ -26,10 +26,18 @@ const Carousel: React.FC<CarouselProps> = ({ cards }) => {
     <div className="carousel">
       <div
         className="carousel-track"
-        style={{ transform: `translateX(-${currentSlide * 101}%)` }}
+        style={{ transform: `translateX(-${currentSlide * 50}%)` }} // Move by 50% per slide
       >
         {cards.map((card, index) => (
-          <Card key={index} {...card} />
+          <Card
+            key={index}
+            imgSrc={card.imgSrc}
+            title={card.title}
+            description={card.description}
+            onAddToCart={() => {
+              console.log(`${card.title} added to cart`);
+            }}
+          />
         ))}
       </div>
       <button className="carousel-control prev" onClick={prevSlide}>

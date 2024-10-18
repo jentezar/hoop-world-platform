@@ -1,15 +1,12 @@
-.page-container {
-    padding-top: 6rem; /* Padding to accommodate sticky navbar */
-    padding: 2rem;
-    margin: 0;
-    width: 100vw;
-    min-height: 100vh;
-    background-color: rgba(0, 0, 0, 0.6); /* Background to improve readability */
-  }
   
   .merch-page {
     color: #ffffff;
     text-align: center;
+  }
+  
+  .page-heading {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
   }
   
   .merch-items {
@@ -18,11 +15,40 @@
     justify-content: center;
   }
   
-  .merch-items .card {
-    background-color: rgba(0, 0, 0, 0.7); /* Ensure card stands out */
+  .merch-item {
+    background-color: rgba(0, 0, 0, 0.7);
     margin: 1rem;
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 200px;
+  }
+  
+  .merch-item h3 {
+    margin-bottom: 1rem;
+  }
+  
+  .item-image {
+    width: 100%; /* Make sure the image fits the container */
+    height: 150px;
+    object-fit: cover; /* Maintain aspect ratio while filling the container */
+    margin-bottom: 1rem;
+    border-radius: 8px; /* Optional: add rounded corners */
+  }
+  
+  .merch-item button {
+    background-color: orangered; /* Force orangered background color */
+    color: #ffffff; /* Set the text color to white for better contrast */
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: #ffb700; /* Change hover color */
+      color: #000000;
+    }
   }
   
