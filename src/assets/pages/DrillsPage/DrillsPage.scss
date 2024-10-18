@@ -1,0 +1,40 @@
+.drills-page {
+  padding-top: 6rem; /* Adjust this to match the height of your navbar */
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background for readability */
+  width: 100%;
+  min-height: 100vh; /* Ensure the page takes up the full height of the viewport */
+}
+
+.drills-page .drill {
+  background-color: rgba(0, 0, 0, 0.7); /* Darken the drill container */
+  color: #fff;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+}
+
+  
+  
+  .drills-page h2 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+  }
+  
+  .drills-page .drill h3 {
+    font-size: 1.8rem;
+  }
+  
+  .drills-page a {
+    color: #00f;
+    text-decoration: underline;
+  }
+  
+  .drills-page a:hover {
+    color: #ffd700;
+    text-decoration: none;
+  }
+  

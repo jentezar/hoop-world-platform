@@ -1,0 +1,28 @@
+.page-container {
+    padding-top: 6rem; /* Padding to accommodate sticky navbar */
+    padding: 2rem;
+    margin: 0;
+    width: 100vw;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6); /* Background to improve readability */
+  }
+  
+  .merch-page {
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .merch-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .merch-items .card {
+    background-color: rgba(0, 0, 0, 0.7); /* Ensure card stands out */
+    margin: 1rem;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
