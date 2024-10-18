@@ -5,7 +5,7 @@ interface CardProps {
   imgSrc: string;
   title: string;
   description: string;
-  onAddToCart: () => void; // Add the onAddToCart prop for handling button clicks
+  onAddToCart?: () => void; // Add the onAddToCart prop for handling button clicks
 }
 
 const Card: React.FC<CardProps> = ({ imgSrc, title, description, onAddToCart }) => {

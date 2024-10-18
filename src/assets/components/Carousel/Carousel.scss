@@ -7,12 +7,12 @@
     .carousel-track {
       display: flex;
       transition: transform 0.5s ease-in-out;
-      width: calc(100% * 2); /* Track is double the width for 2 cards per slide */
+      width: 100%; /* Track takes up full width */
     }
   
     .card {
-      flex: 0 0 calc(50% - 20px); /* Each card takes up 50% of the width minus the margin */
-      margin: 0 10px; /* Add equal margin to both sides */
+      flex: 0 0 48.5%;
+      margin: 0 10px;
       text-align: center;
       background-color: rgba(0, 0, 0, 0.5);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -37,18 +37,18 @@
       }
     }
   
-    .carousel-control {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background-color: #ff4500;
-      border: none;
-      padding: 1rem;
-      cursor: pointer;
-      color: #fff;
-      font-size: 2rem;
-      opacity: 0.8;
-  
+  .carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ff4500;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    color: #fff;
+    font-size: 2rem;
+    opacity: 0.8;
+      
       &:hover {
         opacity: 1;
       }
