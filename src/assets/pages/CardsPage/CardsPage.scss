@@ -1,19 +1,56 @@
 .cards-page {
-    color: #ffffff;
-    text-align: center;
-  }
-  
-  .page-heading {
-    font-size: 2.5rem;
-    margin-bottom: 2rem; /* Add spacing below the heading */
-  }
-  
-  .cards-items {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1rem; /* Add spacing between the cards */
-  }
-  
-  /* Remove .card-item, as the card styles are handled in Card.scss */
-  
+  color: #ffffff;
+  text-align: center;
+}
+
+.page-heading {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.cards-items {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: center;
+  gap: 2rem; /* Increase gap for more breathing room */
+  padding: 1rem; /* Add some padding around cards container */
+}
+
+.card-item {
+  background-color: #202020; /* Make the card stand out */
+  border-radius: 10px; /* Smooth the corners */
+  width: 200px; /* Keep cards uniform */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-item img {
+  width: 100%; /* Ensures the image fills the width of the card */
+  height: 150px; /* Set a fixed height for all images */
+  object-fit: cover; /* Crop the image to fit the container while maintaining aspect ratio */
+  border-radius: 5px; /* Keep the rounded corners */
+}
+
+.card-item h3 {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.card-item p {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}
+
+.card-item button {
+  background-color: #ff4500;
+  border: none;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.card-item:hover {
+  transform: scale(1.05); /* Add hover scaling effect */
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}

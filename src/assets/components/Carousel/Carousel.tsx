@@ -21,18 +21,11 @@ const Carousel: React.FC<CarouselProps> = ({ cards }) => {
     <div className="carousel">
       <div
         className="carousel-track"
-        style={{ transform: `translateX(-${currentSlide * 101}%)` }}
-      >
+        >
         {cards.map((card, index) => (
           <Card key={index} {...card} />
         ))}
       </div>
-      <button className="carousel-control prev" onClick={prevSlide}>
-        ‹
-      </button>
-      <button className="carousel-control next" onClick={nextSlide}>
-        ›
-      </button>
     </div>
   );
 };
