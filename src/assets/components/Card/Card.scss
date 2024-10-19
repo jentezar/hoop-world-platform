@@ -1,18 +1,19 @@
-/* Container to handle perspective */
+/* Card container */
 .card-container {
   perspective: 1000px;
   justify-content: center;
 }
 
-/* Card base styles */
+/* Base card styles */
 .card {
   width: 200px;
-  height: 300px; /* Adjust the height according to your design */
+  height: 300px;
   position: relative;
   transform-style: preserve-3d;
   transition: transform 0.6s;
 }
 
+/* Card front and back styling */
 .card-front,
 .card-back {
   position: absolute;
@@ -26,7 +27,6 @@
   flex-direction: column;
 }
 
-/* Front side of the card */
 .card-front {
   background-color: rgba(0, 0, 0, 0.8);
 }
@@ -44,10 +44,9 @@
   text-transform: uppercase;
 }
 
-/* Back side of the card */
 .card-back {
   background-color: rgba(0, 0, 0, 0.9);
-  transform: rotateY(180deg); /* Initially flipped */
+  transform: rotateY(180deg);
   padding: 1rem;
 }
 
@@ -72,7 +71,12 @@
   color: #000;
 }
 
-/* Hover effect to flip the card */
+/* Hover effect for desktop flip */
 .card-container:hover .card {
   transform: rotateY(180deg); /* Flip the card */
+}
+
+/* Flip class for state-based flip (on mobile or click) */
+.card.flipped {
+  transform: rotateY(180deg);
 }
