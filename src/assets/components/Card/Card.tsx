@@ -6,16 +6,18 @@ interface CardProps {
   imgSrc: string;
   title: string;
   description: string;
+  price: number; // Added price prop
 }
 
-const Card: React.FC<CardProps> = ({ imgSrc, title, description }) => {
+const Card: React.FC<CardProps> = ({ imgSrc, title, description, price }) => {
   const [isFlipped, setIsFlipped] = useState(false);
   const navigate = useNavigate();
 
   const handleAddToCart = (event: React.MouseEvent) => {
     // Prevent click from flipping the card if it's the button
     event.stopPropagation();
-    navigate('/AddToCart');
+    // Navigate to addToCart with item details
+    navigate('/addToCart', { state: { imgSrc, title, description, price } });
   };
 
   const handleCardClick = () => {
@@ -33,6 +35,7 @@ const Card: React.FC<CardProps> = ({ imgSrc, title, description }) => {
         </div>
         <div className="card-back">
           <p>{description}</p>
+          <p className="price">${price.toFixed(2)}</p> {/* Show the price */}
           <button onClick={handleAddToCart}>Add to Cart</button>
         </div>
       </div>

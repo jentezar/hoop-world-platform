@@ -8,6 +8,7 @@ import CardsPage from './assets/pages/CardsPage/CardsPage';
 import Navbar from './assets/components/Navbar/Navbar';
 import Login from './assets/pages/LoginPage/LoginPage';
 import Signup from './assets/pages/SignupPage/SignupPage';
+import AddToCart from './assets/pages/AddToCart/AddToCart';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/community" element={<CommunityPage />} />
         <Route path="/drills" element={<DrillsPage />} />
         <Route path="/cards" element={<CardsPage />} />
+        <Route path="/addToCart" element={<AddToCart />} />
       </Routes>
     </>
   );

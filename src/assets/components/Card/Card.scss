@@ -1,13 +1,14 @@
 /* Card container */
 .card-container {
   perspective: 1000px;
+  display: flex;
   justify-content: center;
 }
 
 /* Base card styles */
 .card {
-  width: 200px;
-  height: 300px;
+  width: 250px;
+  height: 250px; /* Consistent height for front and back */
   position: relative;
   transform-style: preserve-3d;
   transition: transform 0.6s;
@@ -17,14 +18,15 @@
 .card-front,
 .card-back {
   position: absolute;
-  width: 200px;
-  height: 220px;
+  width: 100%;
+  height: 100%; /* Match card height */
   backface-visibility: hidden;
   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 1rem; /* Add padding to give content breathing room */
 }
 
 .card-front {
@@ -33,13 +35,13 @@
 
 .card-front img {
   width: 70%;
-  height: 150px;
+  height: 200px;
   object-fit: cover;
   border-radius: 10px;
 }
 
 .card-front h3 {
-  margin-top: 1rem;
+  margin-top: 2rem;
   color: #ffd700;
   text-transform: uppercase;
 }
@@ -47,23 +49,29 @@
 .card-back {
   background-color: rgba(0, 0, 0, 0.9);
   transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Push content apart */
   padding: 1rem;
 }
 
+/* Description and price */
 .card-back p {
   color: white;
   font-size: 1rem;
-  margin-bottom: 1rem;
+  margin: 0.5rem 0; /* Add space between description and price */
 }
 
+/* Button styles */
 .card-back button {
   background-color: orangered;
   color: #fff;
   border: none;
+  cursor: pointer;
   padding: 0.5rem 1rem;
   border-radius: 5px;
-  cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-top: auto; /* Ensure button stays at the bottom */
 }
 
 .card-back button:hover {
