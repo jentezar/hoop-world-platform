@@ -1,0 +1,78 @@
+body {
+    color: #fff; // Set default text color to white for contrast
+    font-family: Arial, sans-serif;
+  }
+  
+  .hooperbot-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #ffffff;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  }
+  
+  p {
+    color: #dcdcdc;
+    font-size: 1.2em;
+  }
+  
+  .chat-window {
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    height: 300px; // Set a fixed height for the chat window
+    overflow-y: auto; // Enable vertical scrolling
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.7); // Dark semi-transparent background
+  }
+  
+  .message {
+    margin-bottom: 8px;
+    font-size: 1.1em;
+    padding: 8px;
+    border-radius: 4px;
+  }
+  
+  .message.user {
+    text-align: right;
+    color: #add8e6; // Light blue for user messages
+  }
+  
+  .message.assistant {
+    text-align: left;
+    color: #ffffff;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  input[type="text"]::placeholder {
+    color: #bbb;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  

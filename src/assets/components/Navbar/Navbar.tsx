@@ -12,6 +12,11 @@ const Navbar: React.FC = () => {
         </NavLink>
       </div>
       <ul className="navbar-center">
+      <li>
+          <NavLink to="/hooperBot">
+            <span className="basketball-icon"></span>HooperBot
+          </NavLink>
+        </li>
         <li>
           <NavLink to="/community">
             <span className="basketball-icon"></span>Community
