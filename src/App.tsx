@@ -9,7 +9,8 @@ import Navbar from './assets/components/Navbar/Navbar';
 import Login from './assets/pages/LoginPage/LoginPage';
 import Signup from './assets/pages/SignupPage/SignupPage';
 import AddToCart from './assets/pages/AddToCart/AddToCart';
-import HooperBot from './assets/pages/HooperBot/HooperBot'
+import HooperBot from './assets/pages/HooperBot/HooperBot';
+import SurveyPage from './assets/pages/SurveyPage/SurveyPage';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         <Route path="/cards" element={<CardsPage />} />
         <Route path="/addToCart" element={<AddToCart />} />
         <Route path="/hooperBot" element={<HooperBot />} />
+        <Route path="/survey" element={<SurveyPage />} />
       </Routes>
     </>
   );

@@ -13,25 +13,30 @@ const Navbar: React.FC = () => {
       </div>
       <ul className="navbar-center">
       <li>
+          <NavLink to="/survey">
+            <span className="basketball-icon"></span>Survey
+          </NavLink>
+        </li>
+      <li>
           <NavLink to="/hooperBot">
             <span className="basketball-icon"></span>HooperBot
           </NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink to="/community">
             <span className="basketball-icon"></span>Community
           </NavLink>
-        </li>
-        <li>
+        </li> */}
+        {/* <li>
           <NavLink to="/drills">
             <span className="basketball-icon"></span>Drills
           </NavLink>
-        </li>
-        <li>
+        </li> */}
+        {/* <li>
           <NavLink to="/merch">
             <span className="basketball-icon"></span>Merch
           </NavLink>
-        </li>
+        </li> */}
         <li>
           <NavLink to="/cards">
             <span className="basketball-icon"></span>Cards
