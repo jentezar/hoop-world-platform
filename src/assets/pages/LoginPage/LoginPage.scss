@@ -18,39 +18,16 @@
   label {
     margin: 1rem 0 0.5rem 0;
     font-size: 1.2rem;
-<<<<<<< HEAD
 }
 
 input {
-    background-color: #000000 !important; /* Force black background */
-    color: #ffffff !important; /* Force white text color */
-    border: 1px solid #444444 !important; /* Consistent border */
-    padding: 0.5rem;
+    padding: 0.2rem;
     font-size: 1rem;
-    box-sizing: border-box;
-    border-radius: 4px;
-    width: 100%;
-}
-
-input:-webkit-autofill {
-    background-color: #000000 !important; /* Override autofill background */
-    -webkit-box-shadow: 0 0 0px 1000px #000000 inset !important; /* Force autofill color */
-    color: #ffffff !important; /* Autofill text color */
-}
-
-input:-moz-autofill {
-    background-color: #000000 !important;
-    color: #ffffff !important;
-}
-
-input:hover,
-input:focus {
-    border-color: #ffc800; /* Highlight on hover/focus */
-    outline: none; /* Remove browser focus outline */
+    border-radius: 4px; /* Optional: Make inputs visually consistent */
+    border: 1px solid #ccc;
 }
 
 .login-container button {
-  margin-top: 1rem;
   padding: 0.7rem;
   background-color: #000000;
   color: #ffffff;
@@ -61,25 +38,20 @@ input:focus {
 
   &:hover {
       background-color: #ffc800;
-=======
->>>>>>> parent of e685cc5 (login/signup ui fixed)
   }
-  
-  input {
-    padding: 0.5rem;
-    font-size: 1rem;
-    margin-bottom: 1rem;
-  }
-  
-  button {
-    padding: 0.7rem;
-    background-color: #000000;
-    color: #ffffff;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  
+}
+
+.login-container p {
+    margin-top: 1rem;
+    text-align: center; 
+}
+
+a {
+    color: #000000;
+    text-align: center; /* Center-align the text */
+    justify-content: center;
+
     &:hover {
-      background-color: #ffd700;
+        text-decoration: underline;
     }
-  }
+}
