@@ -14,6 +14,7 @@ const Login: React.FC = () => {
         <input type="password" id="password" name="password" />
 
         <button type="submit">Log In</button>
+        <button className="login-button" type="submit">Log In</button>
       </form>
       <p>Don't have an account? <a href="/signup">Sign Up</a></p>
     </div>

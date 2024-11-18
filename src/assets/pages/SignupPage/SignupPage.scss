@@ -1,50 +1,49 @@
 // Signup.scss
 .signup-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  form {
   width: 100%; /* Full width */
   max-width: 400px; /* Center the container */
   margin: 0 auto;
   padding: 2rem;
   background-color: rgb(255, 115, 0);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
 } 
 
 form {
     display: flex;
     flex-direction: column;
-    gap: .5rem; /* Add gap between form elements */
+  }
+  
+  label {
+    gap: 1rem; /* Add gap between form elements */
 }
 
 label {
-    margin: .25rem 0 0.5rem 0;
+    margin: 1rem 0 0.5rem 0;
     font-size: 1.2rem;
+  }
+  
+  input {
+    padding: 0.5rem;
 }
 
 input {
-  background-color: #000000 !important; /* Force black background */
-  color: #ffffff !important; /* Force white text color */
-  border: 1px solid #444444 !important; /* Consistent border */
-  padding: 0.5rem;
-  font-size: 1rem;
-  box-sizing: border-box;
-  border-radius: 4px;
-  width: 100%;
-}
-
-input:-webkit-autofill {
-  background-color: #000000 !important; /* Override autofill background */
-  -webkit-box-shadow: 0 0 0px 1000px #000000 inset !important; /* Force autofill color */
-  color: #ffffff !important; /* Autofill text color */
-}
-
-input:-moz-autofill {
-  background-color: #000000 !important;
-  color: #ffffff !important;
-}
-
-input:hover,
-input:focus {
-  border-color: #ffc800; /* Highlight on hover/focus */
-  outline: none; /* Remove browser focus outline */
+    padding: 0.2rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px; /* Optional: Make inputs visually consistent */
+    border: 1px solid #ccc;
 }
 
 .signup-container button {
@@ -55,53 +54,9 @@ input:focus {
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-top: 1rem;
 
   &:hover {
-    background-color: #ffc800;
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 2rem;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    text-align: center;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  label {
-    margin: 1rem 0 0.5rem 0;
-    font-size: 1.2rem;
-  }
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 2rem;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    text-align: center;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  label {
-    margin: 1rem 0 0.5rem 0;
-    font-size: 1.2rem;
-  }
-  
-  input {
-    padding: 0.5rem;
-    font-size: 1rem;
-    margin-bottom: 1rem;
+      background-color: #ffc800;
   }
   
   button {
@@ -112,7 +67,21 @@ input:focus {
     cursor: pointer;
     transition: background-color 0.3s ease;
   
+}
+
+.signup-container p {
+    margin-top: 1rem;
+    text-align: center; 
+}
+
+a {
+    color: #000000;
+    text-align: center; /* Center-align the text */
+    justify-content: center;
+
     &:hover {
       background-color: #ffd700;
+        text-decoration: underline;
     }
   }
+}
