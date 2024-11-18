@@ -1,7 +1,5 @@
 // Signup.scss
 .signup-container {
-<<<<<<< HEAD
-<<<<<<< HEAD
   width: 100%; /* Full width */
   max-width: 400px; /* Center the container */
   margin: 0 auto;
@@ -60,30 +58,7 @@ input:focus {
   margin-top: 1rem;
 
   &:hover {
-      background-color: #ffc800;
-=======
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 2rem;
-    background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    text-align: center;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  label {
-    margin: 1rem 0 0.5rem 0;
-    font-size: 1.2rem;
->>>>>>> parent of e685cc5 (login/signup ui fixed)
-  }
-  
-=======
+    background-color: #ffc800;
     width: 100%;
     max-width: 400px;
     margin: 0 auto;
@@ -103,8 +78,26 @@ input:focus {
     margin: 1rem 0 0.5rem 0;
     font-size: 1.2rem;
   }
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+  }
   
->>>>>>> parent of e685cc5 (login/signup ui fixed)
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin: 1rem 0 0.5rem 0;
+    font-size: 1.2rem;
+  }
+  
   input {
     padding: 0.5rem;
     font-size: 1rem;
