@@ -1,22 +1,24 @@
+// Login.scss
 .login-container {
-  width: 100%; /* Full width */
-  max-width: 400px; /* Center the container */
-  margin: 0 auto;
-  padding: 2rem;
-  background-color: rgb(255, 115, 0);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-} 
-
-form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: orange;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  form {
     display: flex;
     flex-direction: column;
-    gap: 1rem; /* Add gap between form elements */
-}
-
-label {
+  }
+  
+  label {
     margin: 1rem 0 0.5rem 0;
     font-size: 1.2rem;
+<<<<<<< HEAD
 }
 
 input {
@@ -59,20 +61,25 @@ input:focus {
 
   &:hover {
       background-color: #ffc800;
+=======
+>>>>>>> parent of e685cc5 (login/signup ui fixed)
   }
-}
-
-.login-container p {
-    margin-top: 1rem;
-    text-align: center; 
-}
-
-a {
-    color: #000000;
-    text-align: center; /* Center-align the text */
-    justify-content: center;
-
+  
+  input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  button {
+    padding: 0.7rem;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
     &:hover {
-        text-decoration: underline;
+      background-color: #ffd700;
     }
-}
+  }
