@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-hoopwrldplatform-dev-89f73-authRole",
+      "UnauthRoleArn": "arn:aws:iam::396913708821:role/amplify-hoopwrldplatform-dev-89f73-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::396913708821:role/amplify-hoopwrldplatform-dev-89f73-authRole",
+      "Region": "us-east-2",
+      "DeploymentBucketName": "amplify-hoopwrldplatform-dev-89f73-deployment",
+      "UnauthRoleName": "amplify-hoopwrldplatform-dev-89f73-unauthRole",
+      "StackName": "amplify-hoopwrldplatform-dev-89f73",
+      "StackId": "arn:aws:cloudformation:us-east-2:396913708821:stack/amplify-hoopwrldplatform-dev-89f73/93dc8b30-ada8-11ef-a737-067ea58f5161",
+      "AmplifyAppId": "d22by54525ms48"
+    },
+    "categories": {
+      "auth": {
+        "hoopwrldplatforma12cd6d2": {}
+      }
+    }
+  }
+}
